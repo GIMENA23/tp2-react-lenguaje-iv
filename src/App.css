@@ -27,5 +27,24 @@
 
 .page-contacto {
   width: 100%;
-  max-width: 560px;
+  max-width: 980px;
+}
+
+.contacto-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+  align-items: stretch;
+}
+
+.contacto-layout .mapa-contacto {
+  min-height: 100%;
+}
+
+@media (max-width: 760px) {
+  .contacto-layout {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,0 +1,60 @@
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.tech-card {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+}
+
+.tech-card img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.tech-card h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.tech-categoria {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.tech-nivel {
+  font-size: 0.8rem;
+  color: var(--muted-color);
+  background-color: var(--bg-color);
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.tech-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted-color);
+}
